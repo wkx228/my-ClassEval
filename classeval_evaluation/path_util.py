@@ -19,7 +19,7 @@ class PathUtil:
 
     @staticmethod
     def model_output_data(filename: str, ext: str):
-        path = Path(OUTPUT_DIR)/'model_output'
+        path = Path(OUTPUT_DIR)/'model_output_v1.0.0'
         path.mkdir(parents=True, exist_ok=True)
         path = path / f'{filename}.{ext}'
         return str(path)
@@ -33,7 +33,7 @@ class PathUtil:
 
     @staticmethod
     def test_result_data(filename: str, ext: str):
-        path = Path(OUTPUT_DIR)/'result'
+        path = Path(OUTPUT_DIR)/'result_v1.0,0'
         path.mkdir(parents=True, exist_ok=True)
         path = path / f'{filename}.{ext}'
         return str(path)
